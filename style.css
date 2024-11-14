@@ -30,7 +30,18 @@
     display: grid;
     gap: 20px;
     padding: 0;
+}
 
+.menu .icon {
+    height: 1em;
+    width: 1em;
+}
+
+li {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 20px 1fr;
+    padding: 0px 0px 0px 15px;
 }
 
 .main-content {
