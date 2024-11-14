@@ -7,23 +7,33 @@
     width: 100vw;
     height: min(100vh);
     display: grid;
+    gap: 10px;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 }
 
 .header {
-    background-color: orange;
+    background-color: lightcoral;
+    border: solid black 2px;
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
 .sidebar {
-    background-color: blue;
+    background-color: lightblue;
+    border: solid black 2px;
     grid-column: 1/2;
     grid-row: 1/3;
+}
+
+.sidebar .menu {
+    display: grid;
+    gap: 20px;
+    padding: 0;
 
 }
 
 .main-content {
-    background-color: green;
+    background-color: lightgreen;
+    border: solid black 2px;
 }
