@@ -1,6 +1,11 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    --h2-font-size: 1.3em;
+}
+
+h2 {
+    font-size: var(--h2-font-size);
 }
 
 .container  {
@@ -26,23 +31,37 @@
     grid-row: 1/3;
 }
 
-.sidebar .menu {
-    display: grid;
-    gap: 20px;
-    padding: 0;
+.icon_header {
+    height: var(--h2-font-size);
+    width: var(--h2-font-size);
+
 }
 
-.menu .icon {
+.menu {
+    display: grid;
+    gap: 10px;
+    padding: 24px 0px 0px 0px;
+}
+
+.icon {
     height: 1em;
     width: 1em;
 }
 
-li {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 20px 1fr;
-    padding: 0px 0px 0px 15px;
+.dashbaord_header {
+    grid-template-columns: 40px 1fr;
+    padding: 20px 0px 0px 15px;
 }
+
+.sidebar li {
+    padding: 10px 0px 0px 15px;
+}
+
+.sidebar li, .dashbaord_header {
+    display: flex;
+    gap: 10px;
+}
+
 
 .main-content {
     background-color: lightgreen;
