@@ -12,7 +12,6 @@ h2 {
     width: 100vw;
     height: min(100vh);
     display: grid;
-    gap: 10px;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 }
@@ -22,6 +21,26 @@ h2 {
     border: solid black 2px;
     grid-column: 2/3;
     grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.search, .greeting {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    gap: 15px;
+    padding: 0px 0px 0px 50px;
+}
+
+#search_bar {
+    background-color: lightgray;
+    border-radius: 100px;
+    border: gray solid 1px;
+    height: 2em;
+    width: 40%;
 }
 
 .sidebar {
