@@ -168,6 +168,12 @@ h2 {
     grid-row: 1/2;
 }
 
+.trending-header {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
 .project-header, .anouncement-header {
     display: flex;
     align-items: flex-end;
@@ -192,8 +198,6 @@ h2 {
 .anouncement-container{
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
-
-
 }
 
 .trending-container, .anouncement-container {
@@ -202,7 +206,7 @@ h2 {
     border-radius: 10px;
 }
 
-.anouncement {
+.anouncement, .trending {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: minmax(200px, 1fr);
@@ -210,12 +214,12 @@ h2 {
     height: 100%;
 }
 
-.anouncement-content {
+.anouncement-content, .trending-subtitle {
     font-size: 0.6em;
     grid-row: 2;
 }
 
-.anouncement-subheader {
+.anouncement-subheader, .trending-username {
     grid-row: 1;
     display: flex;
     align-items: flex-end;
@@ -225,6 +229,8 @@ h2 {
     border-bottom: 1px black solid;
 }
 
-.last-box {
-    padding-top: 5px;
+.trending-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
 }
