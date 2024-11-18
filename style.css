@@ -9,7 +9,6 @@ h2 {
 }
 
 .container  {
-    width: 100vw;
     height: min(100vh);
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -206,12 +205,15 @@ h2 {
     border-radius: 10px;
 }
 
-.anouncement, .trending {
+.anouncement, .usernmae-subtitle-container {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: minmax(200px, 1fr);
-    margin: 0px 20px 0px 20px;
     height: 100%;
+}
+
+.anouncement {
+    margin: 0px 20px 0px 20px;
 }
 
 .anouncement-content, .trending-subtitle {
@@ -233,4 +235,20 @@ h2 {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     align-items: center;
+}
+
+.usernmae-subtitle-container {
+    padding: 0px 0px 0px 10px;
+}
+
+.trending-card {
+    padding: 0px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.trending-avatar {
+    height: 2em;
+    border: 1px black solid;
+    border-radius: 100%;
 }
