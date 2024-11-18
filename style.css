@@ -132,6 +132,7 @@ h2 {
 .main-content {
     background-color: lightgreen;
     border: solid black 2px;
+    padding-bottom: 20px;
 }
 
 .main-content-container {
