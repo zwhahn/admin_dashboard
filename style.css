@@ -190,10 +190,29 @@ h2 {
 
 
 .anouncement-container{
-    background-color: gray;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+
 
 }
 
-.trending-container {
-    background-color: gray;
+.trending-container, .anouncement-container {
+    display: grid;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.anouncement {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: minmax(200px, 1fr);
+}
+
+.anouncement-content {
+    font-size: 0.6em;
+    grid-row: 2;
+}
+
+.anouncement-subheader {
+    grid-row: 1;
 }
