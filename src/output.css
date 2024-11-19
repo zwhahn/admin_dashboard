@@ -562,12 +562,26 @@ video {
   z-index: 10;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-b-lg {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .border-2 {
@@ -684,6 +698,12 @@ h2 {
   border-radius: 100%;
 }
 
+#avatar_big:hover, .avatar:hover {
+  transition: all;
+  transition-duration: 75ms;
+  border: solid black 3px;
+}
+
 #greeting_message {
   display: flex;
   justify-content: center;
@@ -705,6 +725,7 @@ h2 {
   border-radius: 100px;
   height: 2em;
   width: 80%;
+  text-indent: 15px;
 }
 
 .profile_center, #action_items {
@@ -739,7 +760,6 @@ h2 {
 
 .menu {
   display: grid;
-  gap: 10px;
   padding: 24px 0px 0px 0px;
 }
 
@@ -755,7 +775,7 @@ h2 {
 }
 
 .sidebar li {
-  padding: 5px 0px 5px 15px;
+  padding: 10px 0px 10px 15px;
 }
 
 .sidebar li, .dashbaord_header {
@@ -814,7 +834,7 @@ h2 {
 .card {
   height: 200px;
   width: clamp(200px, 100%, 400px);
-  border-radius: 8px;
+  border-radius: 0.5em;
 }
 
 .anouncement_trending_container {
@@ -831,7 +851,7 @@ h2 {
 
 .trending-container, .anouncement-container {
   display: grid;
-  border-radius: 10px;
+  border-radius: 0.5rem;
 }
 
 .anouncement, .usernmae-subtitle-container {
@@ -874,6 +894,7 @@ h2 {
   padding: 0px 0px 0px 20px;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .trending-avatar {
@@ -890,6 +911,11 @@ h2 {
 .hover\:bg-orange-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(154 52 18 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-slate-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:font-bold:hover {
