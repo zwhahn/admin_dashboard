@@ -119,12 +119,13 @@ h2 {
 }
 
 .sidebar li {
-    padding: 10px 0px 0px 15px;
+    padding: 5px 0px 5px 15px;
 }
 
 .sidebar li, .dashbaord_header {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 
