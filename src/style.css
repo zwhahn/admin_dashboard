@@ -12,16 +12,14 @@ h2 {
     font-size: var(--h2-font-size);
 }
 
-.container  {
-    height: min(100vh);
+.page-layout  {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
-    width: 100%;
 }
 
 .header {
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     border: solid black 2px;
     grid-column: 2/3;
     grid-row: 1/2;
@@ -122,6 +120,7 @@ h2 {
 .dashbaord_header {
     grid-template-columns: 40px 1fr;
     padding: 20px 0px 0px 15px;
+    align-items: center;
 }
 
 .sidebar li {
