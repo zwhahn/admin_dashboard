@@ -178,7 +178,7 @@ h2 {
 .card {
     height: 200px;
     width: clamp(200px, 100%, 400px);
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .anouncement_trending_container {
