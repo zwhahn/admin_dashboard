@@ -582,6 +582,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 5fr;
+  height: 100vh;
 }
 
 .header {
